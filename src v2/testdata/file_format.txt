@@ -1,0 +1,38 @@
+The format of these data files is:
+number of planes (p), freeze time
+for each plane i (i=1,...,p):
+   appearance time, earliest landing time, target landing time,
+   latest landing time, penalty cost per unit of time for landing
+   before target, penalty cost per unit of time for landing
+   after target
+   for each plane j (j=1,...p): separation time required after 
+                                i lands before j can land
+
+
+Optimal Solutions:  P: Plane, R:Runway
+file:   P     R      Optimal Solution
+1	10	1	700
+		2	90
+		3	0
+2	15	1	1480
+		2	210
+		3	0
+3	20	1	820
+		2	60
+		3	0
+4	20	1	2520
+		2	640
+		3	130
+5	20	1	3100
+		2	650
+		3	170
+6	30	1	24442
+		2	554
+		3	0
+7	44	1	1550
+		2	0
+		3	0
+8	50	1	1950
+		2	135
+		3	0
+
